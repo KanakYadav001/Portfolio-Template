@@ -80,7 +80,7 @@ section .p {
 .marquee::after {
   content: "";
   height: 100%;
-  width: 20%;
+  width: 50%;
   position: absolute;
   top: 0;
   left: 0;
@@ -89,7 +89,7 @@ section .p {
 .marquee::before {
   content: "";
   height: 100%;
-  width: 20%;
+  width: 50%;
   position: absolute;
   top: 0;
   right: 0;
@@ -113,6 +113,54 @@ section .p {
   to {
     transform: translateX(-100%);
   }
+}
+
+.parent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+.parent .sec3 {
+  border: 2px solid rgba(255, 255, 255, 0.151);
+  background-color: #181716;
+  height: 260px;
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 0.9em;
+}
+.parent .sec3 p {
+  padding-top: 1em;
+}
+.parent .sec3 .imgd {
+  display: flex;
+}
+.parent .sec3 .imgd .arrow1 {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgba(251, 251, 251, 0.227);
+  border-radius: 100%;
+  margin-top: 27px;
+  margin-left: 5px;
+  background-color: rgba(85, 84, 84, 0.2039215686);
+}
+.parent .sec3 .imgd .pa {
+  padding-left: 10px;
+  margin-top: 23px;
+  display: inline-block;
+  font-size: 0.8em;
+  text-decoration: none;
+  padding-bottom: 20px;
+  letter-spacing: 0.2em;
+}
+.parent img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 29px;
+  rotate: 220deg;
+  opacity: 0.5;
 }
 
 @media (min-width: 1020px) {
